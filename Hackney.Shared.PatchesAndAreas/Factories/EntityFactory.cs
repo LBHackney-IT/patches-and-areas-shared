@@ -1,5 +1,5 @@
-using PatchesAndAreas.Domain;
-using PatchesAndAreas.Infrastructure;
+using Hackney.Shared.PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Infrastructure;
 
 namespace Hackney.Shared.PatchesAndAreas.Factories
 {

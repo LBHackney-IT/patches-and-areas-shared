@@ -1,7 +1,7 @@
 using FluentValidation;
 using Hackney.Core.Validation;
-using PatchesAndAreas.Boundary.Request.Validation;
-using PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Boundary.Request.Validation;
+using Hackney.Shared.PatchesAndAreas.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

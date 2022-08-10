@@ -1,6 +1,6 @@
 using FluentAssertions;
-using PatchesAndAreas.Domain;
-using PatchesAndAreas.Factories;
+using Hackney.Shared.PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Factories;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;

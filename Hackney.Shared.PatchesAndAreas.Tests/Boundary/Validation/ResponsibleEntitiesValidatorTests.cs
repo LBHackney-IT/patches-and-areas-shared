@@ -1,7 +1,7 @@
 using FluentValidation.TestHelper;
-using PatchesAndAreas.Boundary.Request.Validation;
-using PatchesAndAreas.Domain;
-using PatchesAndAreas.Infrastructure.Constants;
+using Hackney.Shared.PatchesAndAreas.Boundary.Request.Validation;
+using Hackney.Shared.PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Infrastructure.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;

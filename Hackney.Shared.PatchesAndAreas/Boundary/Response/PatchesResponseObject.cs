@@ -1,4 +1,4 @@
-using PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Domain;
 using System;
 using System.Collections.Generic;
 

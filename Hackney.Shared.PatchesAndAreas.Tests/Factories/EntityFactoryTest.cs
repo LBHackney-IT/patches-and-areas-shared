@@ -1,7 +1,7 @@
 using AutoFixture;
-using PatchesAndAreas.Domain;
-using PatchesAndAreas.Factories;
-using PatchesAndAreas.Infrastructure;
+using Hackney.Shared.PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Factories;
+using Hackney.Shared.PatchesAndAreas.Infrastructure;
 using FluentAssertions;
 using Xunit;
 

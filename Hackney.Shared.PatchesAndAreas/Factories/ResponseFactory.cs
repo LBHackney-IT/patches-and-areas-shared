@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using PatchesAndAreas.Boundary.Response;
-using PatchesAndAreas.Domain;
-using PatchesAndAreas.Infrastructure;
+using Hackney.Shared.PatchesAndAreas.Boundary.Response;
+using Hackney.Shared.PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Infrastructure;
 
 namespace Hackney.Shared.PatchesAndAreas.Factories
 {

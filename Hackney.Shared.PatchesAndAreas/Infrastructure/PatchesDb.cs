@@ -1,6 +1,6 @@
 using Amazon.DynamoDBv2.DataModel;
 using Hackney.Core.DynamoDb.Converters;
-using PatchesAndAreas.Domain;
+using Hackney.Shared.PatchesAndAreas.Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
