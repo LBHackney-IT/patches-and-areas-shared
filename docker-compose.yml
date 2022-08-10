@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  hackney-shared-patches-and-areas-test:
+    image: hackney-shared-patches-and-areas-test
+    build:
+      context: .
+      dockerfile: Hackney.Shared.PatchesAndAreas.Tests/Dockerfile
+      args:
+        - LBHPACKAGESTOKEN=${LBHPACKAGESTOKEN}
