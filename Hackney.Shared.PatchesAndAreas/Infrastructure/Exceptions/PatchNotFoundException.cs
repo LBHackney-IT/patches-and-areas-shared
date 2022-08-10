@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PatchesAndAreas.Infrastructure.Exceptions
+namespace Hackney.Shared.PatchesAndAreas.Infrastructure.Exceptions
 {
     public class PatchNotFoundException : Exception
     {

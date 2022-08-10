@@ -2,7 +2,7 @@ using PatchesAndAreas.Domain;
 using System;
 using System.Collections.Generic;
 
-namespace PatchesAndAreas.Boundary.Response
+namespace Hackney.Shared.PatchesAndAreas.Boundary.Response
 {
     public class PatchesResponseObject
     {

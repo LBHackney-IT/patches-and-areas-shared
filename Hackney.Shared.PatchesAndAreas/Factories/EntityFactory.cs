@@ -1,7 +1,7 @@
 using PatchesAndAreas.Domain;
 using PatchesAndAreas.Infrastructure;
 
-namespace PatchesAndAreas.Factories
+namespace Hackney.Shared.PatchesAndAreas.Factories
 {
     public static class EntityFactory
     {

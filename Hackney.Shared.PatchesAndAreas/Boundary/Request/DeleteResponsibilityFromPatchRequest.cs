@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PatchesAndAreas.Boundary.Request
+namespace Hackney.Shared.PatchesAndAreas.Boundary.Request
 {
     public class DeleteResponsibilityFromPatchRequest
     {

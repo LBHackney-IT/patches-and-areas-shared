@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PatchesAndAreas.Domain
+namespace Hackney.Shared.PatchesAndAreas.Domain
 {
     public class ResponsibleEntities
     {

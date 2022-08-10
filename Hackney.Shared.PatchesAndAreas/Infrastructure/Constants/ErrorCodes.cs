@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PatchesAndAreas.Infrastructure.Constants
+namespace Hackney.Shared.PatchesAndAreas.Infrastructure.Constants
 {
     public static class ErrorCodes
     {

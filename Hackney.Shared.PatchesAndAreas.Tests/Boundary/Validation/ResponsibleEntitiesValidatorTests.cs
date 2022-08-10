@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace PatchesAndAreas.Tests.Boundary.Validation
+namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
 {
     public class ResponsibleEntitiesValidatorTests
     {

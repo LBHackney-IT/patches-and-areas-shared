@@ -5,7 +5,7 @@ using PatchesAndAreas.Infrastructure;
 using FluentAssertions;
 using Xunit;
 
-namespace PatchesAndAreas.Tests.Factories
+namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
 {
     public class EntityFactoryTest
     {

@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PatchesAndAreas.Infrastructure
+namespace Hackney.Shared.PatchesAndAreas.Infrastructure
 {
     [DynamoDBTable("PatchesAndAreas", LowerCamelCaseProperties = true)]
     public class PatchesDb

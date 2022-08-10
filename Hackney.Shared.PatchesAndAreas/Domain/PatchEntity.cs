@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace PatchesAndAreas.Domain
+namespace Hackney.Shared.PatchesAndAreas.Domain
 {
     public class PatchEntity
     {

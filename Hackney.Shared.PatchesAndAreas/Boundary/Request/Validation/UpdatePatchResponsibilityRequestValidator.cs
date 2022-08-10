@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PatchesAndAreas.Boundary.Request.Validation
+namespace Hackney.Shared.PatchesAndAreas.Boundary.Request.Validation
 {
     public class UpdatePatchResponsibilityRequestValidator : AbstractValidator<UpdatePatchesResponsibilitiesRequestObject>
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace PatchesAndAreas.Domain
+namespace Hackney.Shared.PatchesAndAreas.Domain
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum PatchType

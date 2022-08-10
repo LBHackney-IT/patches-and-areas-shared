@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace PatchesAndAreas.Tests.Factories
+namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
 {
     public class ResponseFactoryTest
     {
