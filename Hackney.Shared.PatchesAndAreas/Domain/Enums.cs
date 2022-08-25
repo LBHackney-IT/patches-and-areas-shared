@@ -17,6 +17,6 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
     public enum ResponsibleType
     {
         HousingOfficer,
-        HousingAreaManager
+        AreaHousingManager
     }
 }
