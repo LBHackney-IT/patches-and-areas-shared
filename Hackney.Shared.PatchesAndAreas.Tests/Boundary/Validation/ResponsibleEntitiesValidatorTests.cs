@@ -25,7 +25,12 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
         public void RequestShouldErrorWithTagsInName()
         {
             //Arrange
-            var model = new ResponsibleEntities() { Name = StringWithTags };
+            var model = new ResponsibleEntities()
+            {
+                Name = StringWithTags,
+                ContactDetails = new ResponsibleEntityContactDetails()
+            };
+            
             //Act
             var result = _classUnderTest.TestValidate(model);
             //Assert
@@ -38,7 +43,10 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
         {
             //Arrange
             string name = "name12345";
-            var model = new ResponsibleEntities() { Name = name };
+            var model = new ResponsibleEntities() {
+                Name = name,
+                ContactDetails = new ResponsibleEntityContactDetails()
+            };
             //Act
             var result = _classUnderTest.TestValidate(model);
             //Assert
