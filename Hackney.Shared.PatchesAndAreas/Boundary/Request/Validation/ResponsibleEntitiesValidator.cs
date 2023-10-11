@@ -15,6 +15,8 @@ namespace Hackney.Shared.PatchesAndAreas.Boundary.Request.Validation
         {
             RuleFor(x => x.Name).NotXssString()
                          .WithErrorCode(ErrorCodes.XssCheckFailure);
+            RuleFor(re => re.ContactDetails.EmailAddress).EmailAddress()
+                .WithErrorCode(ErrorCodes.InvalidEmailAddress);
         }
     }
 }

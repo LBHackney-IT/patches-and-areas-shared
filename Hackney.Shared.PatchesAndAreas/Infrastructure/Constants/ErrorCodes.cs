@@ -7,6 +7,7 @@ namespace Hackney.Shared.PatchesAndAreas.Infrastructure.Constants
 {
     public static class ErrorCodes
     {
+        public const string InvalidEmailAddress = "W40";
         public const string XssCheckFailure = "W42";
     }
 }
