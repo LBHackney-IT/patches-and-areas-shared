@@ -30,7 +30,7 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
                 Name = StringWithTags,
                 ContactDetails = new ResponsibleEntityContactDetails()
             };
-            
+
             //Act
             var result = _classUnderTest.TestValidate(model);
             //Assert
@@ -43,7 +43,8 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
         {
             //Arrange
             string name = "name12345";
-            var model = new ResponsibleEntities() {
+            var model = new ResponsibleEntities()
+            {
                 Name = name,
                 ContactDetails = new ResponsibleEntityContactDetails()
             };
