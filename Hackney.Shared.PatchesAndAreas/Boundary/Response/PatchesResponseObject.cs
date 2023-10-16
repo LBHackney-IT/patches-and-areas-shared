@@ -13,5 +13,7 @@ namespace Hackney.Shared.PatchesAndAreas.Boundary.Response
         public string Domain { get; set; }
         public List<ResponsibleEntities> ResponsibleEntities { get; set; }
 
+        public int? VersionNumber { get; set; }
+
     }
 }

@@ -10,5 +10,6 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
         public Guid Id { get; set; }
         public string Name { get; set; }
         public ResponsibleType ResponsibleType { get; set; }
+        public ResponsibleEntityContactDetails ContactDetails { get; set; }
     }
 }

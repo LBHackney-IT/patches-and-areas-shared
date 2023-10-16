@@ -25,7 +25,12 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
         public void RequestShouldErrorWithTagsInName()
         {
             //Arrange
-            var model = new ResponsibleEntities() { Name = StringWithTags };
+            var model = new ResponsibleEntities()
+            {
+                Name = StringWithTags,
+                ContactDetails = new ResponsibleEntityContactDetails()
+            };
+
             //Act
             var result = _classUnderTest.TestValidate(model);
             //Assert
@@ -38,11 +43,57 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Boundary.Validation
         {
             //Arrange
             string name = "name12345";
-            var model = new ResponsibleEntities() { Name = name };
+            var model = new ResponsibleEntities()
+            {
+                Name = name,
+                ContactDetails = new ResponsibleEntityContactDetails()
+            };
             //Act
             var result = _classUnderTest.TestValidate(model);
             //Assert
             result.ShouldNotHaveValidationErrorFor(x => x.Name);
+        }
+
+        [Fact]
+        public void RequestShouldContainAValidEmailAddress()
+        {
+            //Arrange
+            string emailAddress = "test.test@hackney.gov.uk";
+            var contactDetails = new ResponsibleEntityContactDetails()
+            {
+                EmailAddress = emailAddress
+            };
+
+            var respEnt = new ResponsibleEntities()
+            {
+                ContactDetails = contactDetails
+            };
+
+            //Act
+            var result = _classUnderTest.TestValidate(respEnt);
+            //Assert
+            result.ShouldNotHaveValidationErrorFor(x => x.ContactDetails.EmailAddress);
+        }
+
+        [Fact]
+        public void RequestShouldFailWithInvalidEmailAddress()
+        {
+            //Arrange
+            string emailAddress = "invalid.gov.uk";
+            var contactDetails = new ResponsibleEntityContactDetails()
+            {
+                EmailAddress = emailAddress
+            };
+
+            var respEnt = new ResponsibleEntities()
+            {
+                ContactDetails = contactDetails
+            };
+
+            //Act
+            var result = _classUnderTest.TestValidate(respEnt);
+            //Assert
+            result.ShouldHaveValidationErrorFor(x => x.ContactDetails.EmailAddress);
         }
     }
 }

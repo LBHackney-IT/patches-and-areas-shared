@@ -24,6 +24,7 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
             domain.ParentId.Should().Be(response.ParentId);
             domain.PatchType.Should().Be(response.PatchType);
             domain.ResponsibleEntities.Should().BeEquivalentTo(response.ResponsibleEntities);
+            domain.VersionNumber.Should().Be(response.VersionNumber);
         }
     }
 }
