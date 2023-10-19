@@ -48,5 +48,22 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Domain
             ResEnt1.Should().BeEquivalentTo(ResEnt2);
 
         }
+        [Fact]
+        public void PatchResponsibleEntitiesShouldNotBeEqualIfIdsDoNotMatch()
+        {
+            var testId = Guid.NewGuid();
+            var ResEnt1 = _fixture.Build<ResponsibleEntities>()
+                .With(resEnt => resEnt.Id, testId)
+                .Create();
+            var ResEnt2 = _fixture.Build<ResponsibleEntities>()
+                .With(resEnt => resEnt.Id, Guid.NewGuid())
+                .Create();
+            var ResEnts1 = new List<ResponsibleEntities> { ResEnt1 };
+
+            var ResEnts2 = new List<ResponsibleEntities> { ResEnt2 };
+
+            ResEnt1.Should().NotBeEquivalentTo(ResEnt2);
+
+        }
     }
 }
