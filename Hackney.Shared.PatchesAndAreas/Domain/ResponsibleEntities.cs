@@ -21,12 +21,5 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
             var isEqual = (Id == otherItem.Id);
             return isEqual;
         }
-
-        public override int GetHashCode()
-        {
-            int hash = 13;
-            hash = (hash * 7) + Id.GetHashCode();
-            return hash;
-        }
     }
 }

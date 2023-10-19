@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AutoFixture;
 using FluentAssertions;
 using Hackney.Shared.PatchesAndAreas.Domain;
@@ -45,7 +46,9 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Domain
 
             var ResEnts2 = new List<ResponsibleEntities> { ResEnt2 };
 
-            ResEnt1.Should().BeEquivalentTo(ResEnt2);
+            ResEnts1.FirstOrDefault().Should().BeEquivalentTo(ResEnts2.FirstOrDefault());
+            ResEnts2.FirstOrDefault().Should().BeEquivalentTo(ResEnts1.FirstOrDefault());
+            ResEnts1.Should().BeEquivalentTo(ResEnts2);
 
         }
         [Fact]
@@ -62,7 +65,10 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Domain
 
             var ResEnts2 = new List<ResponsibleEntities> { ResEnt2 };
 
-            ResEnt1.Should().NotBeEquivalentTo(ResEnt2);
+            ResEnts1.FirstOrDefault().Should().NotBeEquivalentTo(ResEnts2.FirstOrDefault());
+            ResEnts2.FirstOrDefault().Should().NotBeEquivalentTo(ResEnts1.FirstOrDefault());
+
+            ResEnts1.Should().NotBeEquivalentTo(ResEnts2);
 
         }
     }
