@@ -14,11 +14,9 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
 
         public override bool Equals(object other)
         {
-            ResponsibleEntities otherItem = other as ResponsibleEntities;
-
-            if (otherItem == null)
+            if (!(other is ResponsibleEntities otherItem))
                 throw new ArgumentNullException();
-            var isEqual = (Id == otherItem.Id);
+            var isEqual = (Id == otherItem.Id && Name == otherItem.Name);
             return isEqual;
         }
     }
