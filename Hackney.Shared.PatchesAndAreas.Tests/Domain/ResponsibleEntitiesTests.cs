@@ -89,15 +89,15 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Domain
                 .With(resEnt => resEnt.Id, testId)
                 .With(resEnt => resEnt.Name, testName1)
                 .Create();
-            
+
             var ResEnt2 = _fixture.Build<ResponsibleEntities>()
                 .With(resEnt => resEnt.Id, testId)
                 .With(resEnt => resEnt.Name, testName2)
                 .Create();
-            
+
             var ResEnts1 = new List<ResponsibleEntities> { ResEnt1 };
             var ResEnts2 = new List<ResponsibleEntities> { ResEnt2 };
-            
+
             ResEnts1.FirstOrDefault().Should().NotBeEquivalentTo(ResEnts2.FirstOrDefault());
             ResEnts2.FirstOrDefault().Should().NotBeEquivalentTo(ResEnts1.FirstOrDefault());
             ResEnts1.Should().NotBeEquivalentTo(ResEnts2);
