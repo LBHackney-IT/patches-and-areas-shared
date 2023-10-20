@@ -11,5 +11,13 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
         public string Name { get; set; }
         public ResponsibleType ResponsibleType { get; set; }
         public ResponsibleEntityContactDetails ContactDetails { get; set; }
+
+        public override bool Equals(object other)
+        {
+            if (!(other is ResponsibleEntities otherItem))
+                throw new ArgumentNullException();
+            var isEqual = (Id == otherItem.Id && Name == otherItem.Name);
+            return isEqual;
+        }
     }
 }
