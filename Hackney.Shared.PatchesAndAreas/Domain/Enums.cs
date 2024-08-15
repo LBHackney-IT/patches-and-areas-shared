@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace Hackney.Shared.PatchesAndAreas.Domain
 {
@@ -10,13 +6,16 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
     public enum PatchType
     {
         patch,
-        area
+        area,
+        tmoPatch
     }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum ResponsibleType
     {
         HousingOfficer,
-        HousingAreaManager
+        HousingAreaManager,
+        TMO,
+        TmoManager
     }
 }
