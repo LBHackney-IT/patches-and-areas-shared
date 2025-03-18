@@ -8,6 +8,6 @@ namespace Hackney.Shared.PatchesAndAreas.Boundary.Request
     public class GetByPatchNameQuery
     {
         [FromQuery(Name = "patchName")]
-        public string patchName { get; set; }
+        public string PatchName { get; set; }
     }
 }
