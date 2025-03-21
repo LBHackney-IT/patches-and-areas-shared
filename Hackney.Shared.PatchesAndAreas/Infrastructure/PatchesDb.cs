@@ -16,7 +16,7 @@ namespace Hackney.Shared.PatchesAndAreas.Infrastructure
         [DynamoDBGlobalSecondaryIndexHashKey]
         public Guid ParentId { get; set; }
 
-        [DynamoDBProperty]
+        [DynamoDBGlobalSecondaryIndexHashKey]
         public string Name { get; set; }
 
         [DynamoDBProperty(Converter = typeof(DynamoDbEnumConverter<PatchType>))]
