@@ -7,7 +7,7 @@ namespace Hackney.Shared.PatchesAndAreas.Boundary.Request
 {
     public class GetByPatchNameQuery
     {
-        [FromRoute(Name = "Name")]
+        [FromRoute(Name = "name")]
         public string PatchName { get; set; }
     }
 }
