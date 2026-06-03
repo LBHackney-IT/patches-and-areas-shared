@@ -12,6 +12,7 @@ namespace Hackney.Shared.PatchesAndAreas.Boundary.Response
         public PatchType PatchType { get; set; }
         public string Domain { get; set; }
         public List<ResponsibleEntities> ResponsibleEntities { get; set; }
+        public bool IsDisabled { get; set; }
 
         public int? VersionNumber { get; set; }
 

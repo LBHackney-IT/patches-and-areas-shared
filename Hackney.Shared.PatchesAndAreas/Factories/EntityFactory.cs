@@ -16,6 +16,7 @@ namespace Hackney.Shared.PatchesAndAreas.Factories
                 Domain = databaseEntity.Domain,
                 PatchType = databaseEntity.PatchType,
                 ResponsibleEntities = databaseEntity.ResponsibleEntities,
+                IsDisabled = databaseEntity.IsDisabled,
                 VersionNumber = databaseEntity.VersionNumber
             };
         }
@@ -33,6 +34,7 @@ namespace Hackney.Shared.PatchesAndAreas.Factories
                 Domain = entity.Domain,
                 PatchType = entity.PatchType,
                 ResponsibleEntities = entity.ResponsibleEntities.ToListOrEmpty(),
+                IsDisabled = entity.IsDisabled,
                 VersionNumber = entity.VersionNumber
             };
         }

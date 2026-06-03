@@ -11,6 +11,7 @@ namespace Hackney.Shared.PatchesAndAreas.Domain
         public PatchType PatchType { get; set; }
         public string Domain { get; set; }
         public IEnumerable<ResponsibleEntities> ResponsibleEntities { get; set; }
+        public bool IsDisabled { get; set; }
         public int? VersionNumber { get; set; }
 
     }

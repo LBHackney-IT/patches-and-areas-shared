@@ -18,6 +18,7 @@ namespace Hackney.Shared.PatchesAndAreas.Factories
                 Domain = domain.Domain,
                 PatchType = domain.PatchType,
                 ResponsibleEntities = domain.ResponsibleEntities.ToListOrEmpty(),
+                IsDisabled = domain.IsDisabled,
                 VersionNumber = domain.VersionNumber
             };
         }

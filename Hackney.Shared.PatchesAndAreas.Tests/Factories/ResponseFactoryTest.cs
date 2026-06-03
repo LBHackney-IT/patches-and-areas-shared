@@ -16,6 +16,7 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
             //Arrange
             var domain = new PatchEntity();
             domain.ResponsibleEntities = new List<ResponsibleEntities>();
+            domain.IsDisabled = true;
             //Act
             var response = domain.ToResponse();
             //Assert
@@ -24,6 +25,7 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
             domain.ParentId.Should().Be(response.ParentId);
             domain.PatchType.Should().Be(response.PatchType);
             domain.ResponsibleEntities.Should().BeEquivalentTo(response.ResponsibleEntities);
+            domain.IsDisabled.Should().Be(response.IsDisabled);
             domain.VersionNumber.Should().Be(response.VersionNumber);
         }
     }
