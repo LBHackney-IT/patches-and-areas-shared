@@ -28,9 +28,6 @@ namespace Hackney.Shared.PatchesAndAreas.Infrastructure
         [DynamoDBProperty(Converter = typeof(DynamoDbObjectListConverter<ResponsibleEntities>))]
         public List<ResponsibleEntities> ResponsibleEntities { get; set; }
 
-        [DynamoDBProperty]
-        public bool IsDisabled { get; set; }
-
         [DynamoDBVersion]
         public int? VersionNumber { get; set; }
 

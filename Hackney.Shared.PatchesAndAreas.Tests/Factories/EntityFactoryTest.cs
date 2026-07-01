@@ -16,7 +16,6 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
         {
             //Arrange
             var databaseEntity = _fixture.Create<PatchesDb>();
-            databaseEntity.IsDisabled = true;
             //Act
             var entity = databaseEntity.ToDomain();
             //Assert
@@ -25,7 +24,6 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
             databaseEntity.ParentId.Should().Be(entity.ParentId);
             databaseEntity.PatchType.Should().Be(entity.PatchType);
             databaseEntity.ResponsibleEntities.Should().BeEquivalentTo(entity.ResponsibleEntities);
-            databaseEntity.IsDisabled.Should().Be(entity.IsDisabled);
         }
 
 
@@ -34,7 +32,6 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
         {
             //Arrange
             var entity = _fixture.Create<PatchEntity>();
-            entity.IsDisabled = true;
             //Act
             var databaseEntity = entity.ToDatabase();
             //Assert
@@ -43,7 +40,6 @@ namespace Hackney.Shared.PatchesAndAreas.Tests.Factories
             entity.ParentId.Should().Be(databaseEntity.ParentId);
             entity.PatchType.Should().Be(databaseEntity.PatchType);
             entity.ResponsibleEntities.Should().BeEquivalentTo(databaseEntity.ResponsibleEntities);
-            entity.IsDisabled.Should().Be(databaseEntity.IsDisabled);
         }
     }
 }
